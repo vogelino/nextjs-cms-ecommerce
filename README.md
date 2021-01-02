@@ -1,5 +1,23 @@
-# 🄵🄰🄵
-Fast Assembled Furniture is a Berlin-based, beautiful, functional and modular furniture system made of reusable DIN normed boxes. This is it's website's repository. It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and using [GraphCMS](https://graphcms.com/) as it underlying headless CMS.
+# Next.js boilerplate for creating fast, cms-baked (eCommerce) websites
+This project is the base I use when creating websites. It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and using [GraphCMS](https://graphcms.com/) as it underlying headless CMS and Stripe payments for the eCommerce part. It can be adapted to use another CMS, like strapi, contentful, or any other headless CMS providing a multi-language graphql API.
+
+## Focus
+This website tries to focus on best practices in the field of website creation. It focuses on:
+- Providing good natural SEO optimization
+  - Using `next/head`
+  - Providing unique, per-page meta tags directly from the CMS
+  - Auto generating branded social-media images using `puppeteer` on a serverless function
+  - Providing all the required favicon images
+  - Providing the required `robots.txt` and `manifest.webmanifest` files
+- Using the appropriated HTML delivery mechanism
+  - Using static site generation where possible
+  - Using server side rendering for dynamic routes
+  - Using client side code for live dynamic content
+- Using custom Stripe payments for the ecommerce
+- Using i18n with `next-translate`, next.js localized routing, localized content straight from the CMS and native number formatting using `Intl.NumberFormat`
+- Using `React.Context` for global state (e.g. loading or cart state)
+- Using Tailwinf in combination of CSS modules for an optimized performance and a minimal effort
+- Providing the best setup for a frictionless deployment with `vercel`
 
 ## Running the website locally
 
