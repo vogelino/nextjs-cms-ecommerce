@@ -2,11 +2,11 @@
 import { useState } from 'react'
 import useInterval from './hooks/useInterval'
 
-const fFaviconPath = '/favicon-f.ico'
+const fFaviconPath = '/favicon-2.ico'
 const aFaviconPath = '/favicon.ico'
-const fFaviconPathPNG16 = '/favicons/favicon-f-16x16.png'
+const fFaviconPathPNG16 = '/favicons/favicon-2-16x16.png'
 const aFaviconPathPNG16 = '/favicons/favicon-16x16.png'
-const fFaviconPathPNG32 = '/favicons/favicon-f-32x32.png'
+const fFaviconPathPNG32 = '/favicons/favicon-2-32x32.png'
 const aFaviconPathPNG32 = '/favicons/favicon-32x32.png'
 
 const getFavicons = (letter) => [
