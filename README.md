@@ -20,8 +20,9 @@ This website tries to focus on best practices in the field of website creation. 
 - Providing the best setup for a frictionless deployment with `vercel`
 
 ## Running the website locally
+First, rename the `sample.env` file to `.env` and adapt the values.
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
