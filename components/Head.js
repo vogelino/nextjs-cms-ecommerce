@@ -4,12 +4,13 @@ import getHeadFavicons from '../utils/faviconsUtil'
 import { LoadingContext } from './LoadingContext'
 
 const siteUrl = process.env.URL
+console.log(process.env.URL)
 
 export default function Head ({
   currentPagePath = '/',
   description = '',
-  siteTitle = 'Fast Assembled Furniture',
-  pageTitle = 'Fast Assembled Furniture',
+  siteTitle = 'Next.js + CMS + eCommerce boilerplate',
+  pageTitle = 'Next.js + CMS + eCommerce boilerplate',
   fbAppId,
   keywords = [],
   themeColor = '#000000',
@@ -28,7 +29,7 @@ export default function Head ({
   }, [])
 
   const longTitle = [pageTitle, siteTitle].join(' ✦ ')
-  const formatedSocialImage = socialThumbnail && `${siteUrl}/api/social-image?text=${encodeURI(pageTitle)}&imgUrl=${encodeURI(socialThumbnail)}`
+  const formatedSocialImage = socialThumbnail && `${typeof window !== 'undefined' ? window.location.origin : siteUrl}/api/social-image?text=${encodeURI(pageTitle)}&imgUrl=${encodeURI(socialThumbnail)}`
   return (
     <NextHead>
       <title>{longTitle}</title>
